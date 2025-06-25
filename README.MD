@@ -1,11 +1,11 @@
-## What is This
+# What is This
 This is a binloader module that enables user to use custom recovery image with avb and userdata encrypted
-## Detail
+# Detail
 For my device (Samsung S23 Ultra), the avb restores the custom recovery to stock ones automatically if user flashes the custom recovery to slot. And the latest twrp recovery cannot decrypt userdata, even it has no lockscreen, so user cannot back their userdata up, and cannot use twrp stably.
-## Solutions
-# Common Solution
+# Solutions
+## Common Solution
 To solve this, a workable solution is to flash the AIO Script provided from XDA (Samsung Forum), this script disables the avb restoration and decrypts the userdata, make userdata can be read by twrp. But this will cause the risk of personal data leak, all sensitive data can be read via recovery.
-# Solution by This Module
+## Solution by This Module
 This module provided a other way to use twrp recovery, and enables user to backup and restore userdata.
 (1) Requirements:
 1. Bootloader is unlocked
