@@ -1,0 +1,14 @@
+#!/bin/sh
+
+export LD_LIBRARY_PATH=/cache/rescue/lib:$LD_LIBRARY_PATH
+
+echo "dumping userdata ..."
+/cache/rescue/dd if=/dev/block/bootdevice/by-name/userdata of=/usb-otg/userdata.img bs=4096 conv=sparse status=progress
+
+echo "sync writeback ..."
+sync
+
+# make sure sync write is completed
+sleep 60s
+
+echo "backup successful"

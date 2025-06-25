@@ -1,0 +1,7 @@
+#!/bin/sh
+
+export LD_LIBRARY_PATH=/cache/rescue/lib:$LD_LIBRARY_PATH
+
+[ ! -f /usb-otg/userdata.img ] && echo "otg-restore: userdata image not found"
+
+/cache/rescue/dd if=/usb-otg/userdata.img of=/dev/block/bootdevice/by-name/userdata bs=4096 status=progress
