@@ -11,30 +11,30 @@ This module provided a other way to use twrp recovery, and enables user to backu
 1. Bootloader is unlocked
 2. Device has root access
 3. Terminal emulator APP (eg. Termux)
-4. Workable TWRP image for your device
+4. Workable TWRP image for your device<br>
 (2) Installation:
 1. Download the lastest tar file from release
 2. Flash it to system using command: bpkg install /path/to/file/crec.tar
 3. Reboot device
-4. Execute: crec once to make it initized
+4. Execute: crec once to make it initized<br>
 (3) Usage:
 1. To use twrp, type command: crec flash. You should flash it everytime you uses the twrp.
 2. To reboot to recovery, type command: crec reboot-rec
-3. To backup restore data, deploy rescue kit: crec instrk
+3. To backup restore data, deploy rescue kit: crec instrk<br>
 # Data Backup Restore
 To perform backup and restore:
 (1) Requirements:
 1. Module is installed and rescue kit is deployed
 2. Mass storage device and OTG cable
-3. Space of storage device is larger than used space of userdata
+3. Space of storage device is larger than used space of userdata<br>
 (2) Steps:
 1. Flash and reboot into TWRP
 2. Plug OTG device in, mount OTG and Cache
 3. Open TWRP Terminal, type: /cache/rescue/otg-backup , then userdata will be dumped to OTG device, backup completed
 4. Open TWRP Terminal, type: /cache/rescue/otg-restore , then userdata will be restored from OTG device, restore completed
-5. Notice: after restore, the root access may lost, should reflash boot.img or init_boot.img to restore it
+5. Notice: after restore, the root access may lost, should reflash boot.img or init_boot.img to restore it<br>
 # Advantages and Disadvantages
-(1) Advantages: keep encrypted, no twrp access unless lockscreen unlocked, protect privacy
+(1) Advantages: keep encrypted, no twrp access unless lockscreen unlocked, protect privacy<br>
 (2) Disadvantages: require more technique knowledge
 # Disclaimer
 The author does NOT have copyright of dd utility and its libraries, only provided binaries in release for convenient.
