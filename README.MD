@@ -7,7 +7,7 @@ For my device (Samsung S23 Ultra), the avb restores the custom recovery to stock
 To solve this, a workable solution is to flash the AIO Script provided from XDA (Samsung Forum), this script disables the avb restoration and decrypts the userdata, make userdata can be read by twrp. But this will cause the risk of personal data leak, all sensitive data can be read via recovery.
 ## Solution by This Module
 This module provided a other way to use twrp recovery, and enables user to backup and restore userdata.<br>
-(1) Requirements:
+  (1) Requirements:
 1. Bootloader is unlocked
 2. Device has root access
 3. Terminal emulator APP (eg. Termux)
@@ -22,8 +22,8 @@ This module provided a other way to use twrp recovery, and enables user to backu
 2. To reboot to recovery, type command: crec reboot-rec
 3. To backup restore data, deploy rescue kit: crec instrk<br>
 # Data Backup Restore
-To perform backup and restore:
-(1) Requirements:
+To perform backup and restore:<br>
+  (1) Requirements:
 1. Module is installed and rescue kit is deployed
 2. Mass storage device and OTG cable
 3. Space of storage device is larger than used space of userdata<br>
