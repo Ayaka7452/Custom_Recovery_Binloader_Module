@@ -6,7 +6,7 @@ For my device (Samsung S23 Ultra), the avb restores the custom recovery to stock
 ## Common Solution
 To solve this, a workable solution is to flash the AIO Script provided from XDA (Samsung Forum), this script disables the avb restoration and decrypts the userdata, make userdata can be read by twrp. But this will cause the risk of personal data leak, all sensitive data can be read via recovery.
 ## Solution by This Module
-This module provided a other way to use twrp recovery, and enables user to backup and restore userdata.
+This module provided a other way to use twrp recovery, and enables user to backup and restore userdata.<br>
 (1) Requirements:
 1. Bootloader is unlocked
 2. Device has root access
