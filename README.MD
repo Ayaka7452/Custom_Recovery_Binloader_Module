@@ -16,8 +16,9 @@ This module provided a other way to use twrp recovery, and enables user to backu
 (2) Installation:
 1. Download the lastest tar file from release
 2. Flash it to system using command: bpkg install /path/to/file/crec.tar
-3. Reboot device
-4. Execute: crec once to make it initized<br>
+3. Place your custom_recovery.img to moddir (/data/binloader/mods/Custom_Rec)
+4. Reboot device
+5. Execute: crec once to make it initized<br>
 (3) Usage:
 1. To use twrp, type command: crec flash. You should flash it everytime you uses the twrp.
 2. To reboot to recovery, type command: crec reboot-rec
